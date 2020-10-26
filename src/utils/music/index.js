@@ -62,8 +62,8 @@ export function stop(message, serverQueue) {
   if (!voiceChannel) {
     return message.channel.send(lang['brazil'].notInVoiceChannel);
   }
-  serverQueue.songs = [];
   serverQueue.connection.dispatcher.end();
+  serverQueue = null;
 }
 
 export function skip(message, serverQueue) {
