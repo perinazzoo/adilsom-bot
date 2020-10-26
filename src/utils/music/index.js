@@ -1,5 +1,4 @@
 import lang from '../../lang/lang';
-import '@discordjs/opus';
 import ytdl from "ytdl-core-discord";
 
 export async function execute(message, serverQueue, queue, song) {
@@ -45,7 +44,9 @@ export async function play(guild, song, queue) {
   }
 
 
-  const dispatcher = serverQueue.connection.play(await ytdl(song.url), { type: 'opus' })
+  const dispatcher = serverQueue.connection.play(await ytdl(song.url, {
+    filter: 'audioonly',
+  }), { type: 'opus' })
     .on("finish", () => {
       serverQueue.songs.shift();
       play(guild, serverQueue.songs[0], queue);

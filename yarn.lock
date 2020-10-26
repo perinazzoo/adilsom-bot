@@ -718,6 +718,14 @@ m3u8stream@^0.7.1:
     miniget "^1.6.1"
     sax "^1.2.4"
 
+m3u8stream@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/m3u8stream/-/m3u8stream-0.8.0.tgz#025a63358ee32d7652bdc0a93f46078582ec5e96"
+  integrity sha512-vvSjdkBPdDHzVr2M+aIXbnYys4zX6m3UzxMaxBJr1PpE0e/3sawkLD4EEmz/q9hv87bleotR70cOWR3UBMtskw==
+  dependencies:
+    miniget "^2.0.1"
+    sax "^1.2.4"
+
 make-dir@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
@@ -1406,6 +1414,16 @@ ytdl-core@^3.4.2:
   dependencies:
     html-entities "^1.3.1"
     m3u8stream "^0.7.1"
+    miniget "^2.0.1"
+    sax "^1.1.3"
+
+ytdl-core@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-4.0.0.tgz#3727400dbc5dfa606ed979eed338bdf3544ba744"
+  integrity sha512-609PreLRioAJ9SbRyWZuIRetD6IumTanm3WiJyB4rOCN4r6H/u82P8fSIl9h/3jkjUvK2licyXoz9CLW2cAkhw==
+  dependencies:
+    html-entities "^1.3.1"
+    m3u8stream "^0.8.0"
     miniget "^2.0.1"
     sax "^1.1.3"
 
