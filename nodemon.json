@@ -1,0 +1,10 @@
+{
+  "ignore": [
+    "*.test.js",
+    "fixtures/*",
+    "node_modules"
+  ],
+  "execMap": {
+    "js": "node -r sucrase/register"
+  }
+}
